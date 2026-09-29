@@ -3,96 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>paper.think | Next-Gen Deeptech & Intelligent Systems</title>
+    <title>paper.think | Science Exhibition Lab</title>
+    <!-- Tailwind Framework for Core Layout structure -->
     <script src="https://tailwindcss.com"></script>
+    
+    <!-- Custom CSS for Cyber/Science Exhibition Visual styling -->
     <style>
         @import url('https://googleapis.com');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        
+        body { 
+            font-family: 'Space Grotesk', sans-serif; 
+            background-color: #030712;
+        }
+        .code-font {
+            font-family: 'JetBrains Mono', monospace;
+        }
+        /* Tech Grid Background Animation */
+        .grid-bg {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(6, 182, 212, 0.04) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(6, 182, 212, 0.04) 1px, transparent 1px);
+        }
+        /* Neon Glow Border Effect */
+        .neon-border {
+            box-shadow: 0 0 15px rgba(6, 182, 212, 0.15);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+        }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-cyan-500 selection:text-slate-950">
+<body class="grid-bg text-slate-100 min-h-screen relative selection:bg-cyan-500 selection:text-slate-950">
 
-    <!-- Glowing Background Effect -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[500px] bg-gradient-to-b from-cyan-500/10 via-transparent to-transparent blur-[120px] pointer-events-none -z-10"></div>
+    <!-- Glowing Lab Aura -->
+    <div class="absolute top-0 left-1/4 w-96 h-96 bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-[140px] pointer-events-none"></div>
 
-    <!-- Navigation Header -->
-    <header class="border-b border-slate-800/60 backdrop-blur-md bg-slate-950/70 sticky top-0 z-50">
+    <!-- Top Navigation -->
+    <header class="border-b border-slate-800/80 backdrop-blur-md bg-slate-950/60 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-200 to-cyan-400 bg-clip-text text-transparent flex items-center gap-1">
-                paper<span class="text-cyan-400 font-black">.</span>think
+            <div class="text-xl font-bold tracking-tight code-font flex items-center gap-1">
+                ⚡ paper<span class="text-cyan-400">.</span>think<span class="text-xs text-slate-500 font-mono"> [v1.0]</span>
             </div>
-            <a href="#connect" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-white px-4 py-2 rounded-xl text-sm font-medium transition shadow-sm">
-                Initialize Connect
-            </a>
+            <span class="px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-[11px] code-font text-emerald-400 animate-pulse">
+                • SYSTEM ONLINE
+            </span>
         </div>
     </header>
 
-    <!-- Main Hero Space -->
-    <section class="max-w-4xl mx-auto px-6 pt-24 pb-16 text-center">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/20 bg-cyan-500/5 text-xs text-cyan-400 font-medium tracking-wide mb-6">
-            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span> Building Next-Gen Core Engines
-        </div>
-        <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-[1.1] mb-6">
-            Translating complex ideas into <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">tangible structures</span>.
-        </h1>
-        <p class="text-base sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed mb-10">
-            We operate at the core intersection of advanced compute and elegant architectural layout. Accelerating systems development with mathematical precision.
-        </p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="#infrastructure" class="w-full sm:w-auto bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold px-8 py-3.5 rounded-xl shadow-lg shadow-cyan-500/10 transition duration-200 text-center">
-                Explore Engine Capabilities
-            </a>
-            <a href="#connect" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 px-8 py-3.5 rounded-xl font-medium transition text-center">
-                Get in Touch
-            </a>
-        </div>
-    </section>
+    <!-- Exhibition Banner / Hero Space -->
+    <main class="max-w-5xl mx-auto px-6 pt-16 pb-20">
+        <section class="text-center max-w-3xl mx-auto mb-16">
+            <div class="inline-block px-3 py-1 rounded-md bg-slate-900 border border-slate-800 text-xs text-cyan-400 code-font mb-4">
+                PROJECT CLASSIFICATION: WORKING PROTOTYPE
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight mb-6 text-white leading-tight">
+                An Intelligent Hybrid System for <span class="bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text text-transparent">Real-World Computing</span>
+            </h1>
+            <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                Welcome to our exhibition module. This setup showcases the mathematical models, algorithmic execution scripts, and structural hardware layout driving our research.
+            </p>
+        </section>
 
-    <!-- Core Domains Section -->
-    <section id="infrastructure" class="border-t border-slate-900 py-20 bg-slate-950">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="text-center max-w-xl mx-auto mb-16">
-                <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-3">Architectural Pillars</h2>
-                <p class="text-sm text-slate-400">High-performance implementations built natively for operational reliability.</p>
+        <!-- Dynamic Lab Config Section (EASY TO MODIFY CONTENT) -->
+        <section class="grid md:grid-cols-3 gap-6 mb-16">
+            
+            <!-- BLOCK 1: HARDWARE SPECS -->
+            <div class="bg-slate-900/60 backdrop-blur-sm p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition dynamic-card">
+                <div class="flex items-center gap-2 mb-4 text-cyan-400">
+                    <span class="text-lg">🛠️</span>
+                    <h3 class="font-bold text-white text-lg">01. Hardware Layer</h3>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                    Managed by efficient microcontroller logic pipelines designed to handle continuous real-time environment inputs with zero processing choke points.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/60">
+                    <span class="px-2 py-0.5 rounded text-[11px] code-font bg-slate-950 text-slate-400 border border-slate-800">ESP32 SoC</span>
+                    <span class="px-2 py-0.5 rounded text-[11px] code-font bg-slate-950 text-slate-400 border border-slate-800">I2C Protocol</span>
+                </div>
+            </div>
+
+            <!-- BLOCK 2: SOFTWARE ALGORITHMS -->
+            <div class="bg-slate-900/60 backdrop-blur-sm p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition dynamic-card">
+                <div class="flex items-center gap-2 mb-4 text-emerald-400">
+                    <span class="text-lg">💻</span>
+                    <h3 class="font-bold text-white text-lg">02. Software Logic</h3>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                    Utilizes pure data computation structures and linear algorithms to map real-time signals into predictable, clear coordinate visualizations.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/60">
+                    <span class="px-2 py-0.5 rounded text-[11px] code-font bg-slate-950 text-slate-400 border border-slate-800">Python 3.x</span>
+                    <span class="px-2 py-0.5 rounded text-[11px] code-font bg-slate-950 text-slate-400 border border-slate-800">Data Analytics</span>
+                </div>
+            </div>
+
+            <!-- BLOCK 3: CORE PURPOSE -->
+            <div class="bg-slate-900/60 backdrop-blur-sm p-6 rounded-2xl border border-slate-800 hover:border-cyan-500/40 transition dynamic-card">
+                <div class="flex items-center gap-2 mb-4 text-purple-400">
+                    <span class="text-lg">📐</span>
+                    <h3 class="font-bold text-white text-lg">03. Project Objective</h3>
+                </div>
+                <p class="text-sm text-slate-400 leading-relaxed mb-4">
+                    To deliver a clean, tangible physical implementation that breaks down complex abstract equations into beautiful tactile geometry.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-800/60">
+                    <span class="px-2 py-0.5 rounded text-[11px] code-font bg-slate-950 text-slate-400 border border-slate-800">Pure Math</span>
+                    <span class="px-2 py-0.5 rounded text-[11px] code-font bg-slate-950 text-slate-400 border border-slate-800">Open Source</span>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Exhibition Showcase / Terminal Simulation Box -->
+        <section class="bg-slate-950 neon-border rounded-2xl p-6 sm:p-8 mb-16">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-800/60 mb-6">
+                <div class="flex gap-1.5">
+                    <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                    <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                </div>
+                <div class="text-xs text-slate-500 code-font">project_runtime.py</div>
             </div>
             
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Pillar 1 -->
-                <div class="p-6 bg-slate-900/40 rounded-2xl border border-slate-900 hover:border-slate-800/80 transition duration-300 group">
-                    <div class="w-10 h-10 bg-cyan-950/50 border border-cyan-800/30 text-cyan-400 rounded-xl flex items-center justify-center font-bold mb-5 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">01</div>
-                    <h3 class="font-bold text-white text-lg mb-2">Systems Modeling</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">Advanced structural frameworks mapped precisely using mathematical computation models.</p>
-                </div>
-                <!-- Pillar 2 -->
-                <div class="p-6 bg-slate-900/40 rounded-2xl border border-slate-900 hover:border-slate-800/80 transition duration-300 group">
-                    <div class="w-10 h-10 bg-cyan-950/50 border border-cyan-800/30 text-cyan-400 rounded-xl flex items-center justify-center font-bold mb-5 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">02</div>
-                    <h3 class="font-bold text-white text-lg mb-2">Hardware-Software Integration</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">Connecting highly optimized local systems directly with intelligent interface logic pipelines.</p>
-                </div>
-                <!-- Pillar 3 -->
-                <div class="p-6 bg-slate-900/40 rounded-2xl border border-slate-900 hover:border-slate-800/80 transition duration-300 group">
-                    <div class="w-10 h-10 bg-cyan-950/50 border border-cyan-800/30 text-cyan-400 rounded-xl flex items-center justify-center font-bold mb-5 group-hover:bg-cyan-500 group-hover:text-slate-950 transition-all duration-300">03</div>
-                    <h3 class="font-bold text-white text-lg mb-2">Intelligent Processing</h3>
-                    <p class="text-sm text-slate-400 leading-relaxed">Developing resource-efficient algorithms optimized specifically for high-throughput computation environments.</p>
-                </div>
+            <h3 class="text-xl font-bold mb-3 text-white">System Documentation & Data Stream</h3>
+            <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                This area is your main exhibition canvas. You can detail your hardware assembly guide, explain mathematical formulas, or outline structural diagrams for evaluators.
+            </p>
+
+            <!-- Code block simulation box -->
+            <div class="bg-slate-900 p-4 rounded-xl border border-slate-800 code-font text-xs text-cyan-400/90 overflow-x-auto leading-relaxed">
+                <p class="text-slate-500"># System output read cycles</p>
+                <p>&gt;&gt;&gt; Initializing system matrix configuration...</p>
+                <p>&gt;&gt;&gt; Reading coordinate plotter step intervals: <span class="text-emerald-400">SUCCESS</span></p>
+                <p>&gt;&gt;&gt; Rendering custom equations output data streams...</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Communication Pipeline CTA -->
-    <section id="connect" class="max-w-4xl mx-auto px-6 py-24 text-center border-t border-slate-900">
-        <h2 class="text-3xl font-extrabold text-white mb-4 tracking-tight">Initiate Core System Dialogue</h2>
-        <p class="text-slate-400 max-w-md mx-auto mb-8 text-sm leading-relaxed">
-            Connect directly with the architectural division at paper.think to explore integration timelines or product parameters.
-        </p>
-        <a href="mailto:connect@paperthink.com" class="inline-block bg-white hover:bg-slate-100 text-slate-950 px-8 py-4 rounded-xl font-bold transition shadow-xl">
-            Open Secure Mail Gateway
-        </a>
-    </section>
+        <!-- Easy Action Connect Panel -->
+        <section class="text-center py-8 border-t border-slate-900">
+            <h4 class="text-lg font-bold text-white mb-2">Review Project Codebase</h4>
+            <p class="text-xs text-slate-500 mb-6">Access raw computational scripts or request a live lab presentation.</p>
+            <a href="mailto:exhibit@paperthink.com" class="inline-block bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-400 hover:to-blue-400 text-slate-950 font-bold px-6 py-2.5 rounded-xl text-sm transition">
+                📩 Request Lab Sheet
+            </a>
+        </section>
+    </main>
 
-    <!-- System Footer -->
-    <footer class="border-t border-slate-900/80 py-8 bg-slate-950 text-center text-xs text-slate-500">
-        <p>© 2026 paper.think. Engineering systemic balance.</p>
+    <!-- Footer -->
+    <footer class="border-t border-slate-900/60 py-6 bg-slate-950 text-center text-[11px] text-slate-600 code-font">
+        © 2026 paper.think • Prepared for High School Science Exhibition Review
     </footer>
 
 </body>
